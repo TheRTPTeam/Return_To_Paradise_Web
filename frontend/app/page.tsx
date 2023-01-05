@@ -1,10 +1,10 @@
-import styles from './styles.module.scss';
+import Text from '@components/text/text';
 
 const Home = () => {
   return (
     <>
-      <h1 className={styles.title}>Hello World</h1>
-      <p className={styles.description}>Welcome to Viva Pinata RTP</p>
+      <Text tag='h1'>Hello World</Text>
+      <Text>Welcome to Viva Pinata RTP</Text>
     </>
   );
 };

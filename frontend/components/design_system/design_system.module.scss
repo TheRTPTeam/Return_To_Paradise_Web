@@ -1,0 +1,11 @@
+$measurement-baseline-grid: 8px;
+$breakpoint-mobile: 600px;
+$color-light-bg: #ffffff;
+$color-dark-bg: #222425;
+
+:export {
+    measurementBaselineGrid: $measurement-baseline-grid;
+    breakpointMobile: $breakpoint-mobile;
+    colorLightBg: $color-light-bg;
+    colorDarkBg: $color-dark-bg;
+}
