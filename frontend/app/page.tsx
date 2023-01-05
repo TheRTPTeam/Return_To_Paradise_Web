@@ -1,9 +1,11 @@
+import styles from './styles.module.scss';
+
 const Home = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <p>Welcome to Viva Pinata RTP</p>
-    </div>
+    <>
+      <h1 className={styles.title}>Hello World</h1>
+      <p className={styles.description}>Welcome to Viva Pinata RTP</p>
+    </>
   );
 };
 
