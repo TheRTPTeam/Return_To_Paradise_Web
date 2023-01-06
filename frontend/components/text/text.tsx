@@ -6,15 +6,15 @@ import styles from './text.module.scss';
 const inter = Inter({ subsets: ['latin'] });
 const irishGrover = Irish_Grover({ weight: '400', subsets: ['latin'] });
 
-type TextAllowedTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'div';
+type TextTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'div';
 
 type TextProps = {
   children: string;
   className?: string;
-  tag?: TextAllowedTags;
+  tag?: TextTag;
 };
 
-const createText = (defaultTag: TextAllowedTags, className: string, font: NextFont) => {
+const createText = (defaultTag: TextTag, className: string, font: NextFont) => {
   const baseClassName = className;
   return ({
     children,
