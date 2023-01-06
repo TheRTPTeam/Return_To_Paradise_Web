@@ -4,6 +4,11 @@ import Text from '../text';
 
 export default {
   component: Text.TitleFunExtraLarge,
+  parameters: {
+    controls: {
+      include: ['children'],
+    },
+  },
 } as Meta<typeof Text.TitleFunExtraLarge>;
 
 export const TitleFunExtraLarge: StoryObj<typeof Text.TitleFunExtraLarge> = {
