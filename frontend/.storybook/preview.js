@@ -7,11 +7,11 @@ export const parameters = {
     values: [
       {
         name: 'light',
-        value: designSystem.colorLightBg,
+        value: designSystem.colorWhite,
       },
       {
         name: 'dark',
-        value: designSystem.colorDarkBg,
+        value: designSystem.colorBlack,
       }
     ]
   },

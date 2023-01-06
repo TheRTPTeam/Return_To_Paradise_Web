@@ -1,0 +1,23 @@
+@use "~@components/design_system/design_system.module.scss" as ds;
+
+.button {
+    border: 0;
+    border-radius: ds.$measurement-baseline-grid;
+    background-color: ds.$color-black;
+    box-shadow: inset 0 0 0 calc(0.5 * ds.$measurement-baseline-grid) ds.$color-black;
+    padding: calc(0.5 * ds.$measurement-baseline-grid) calc(5 * ds.$measurement-baseline-grid);
+    transition: 0.15s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: ds.$color-white;
+
+        .label {
+            color: ds.$color-black;
+        }
+    }
+}
+
+.label {
+    color: ds.$color-white;
+}
