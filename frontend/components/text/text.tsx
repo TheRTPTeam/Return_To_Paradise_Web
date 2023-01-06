@@ -31,9 +31,9 @@ const createText = (defaultTag: TextAllowedTags, className: string, font: NextFo
 };
 
 namespace Text {
+  export const TitleSansLargeBold = createText('h1', styles.titleSansLargeBold, inter);
   export const TitleSansLarge = createText('h1', styles.titleSansLarge, inter);
-  export const TitleSansLargeRegular = createText('h1', styles.titleSansLargeRegular, inter);
-  export const TitleSansSmall = createText('h1', styles.titleSansSmall, inter);
+  export const TitleSansSmallBold = createText('h1', styles.titleSansSmallBold, inter);
   export const SansMedium = createText('p', styles.sansMedium, inter);
   export const TitleFunExtraLarge = createText('h1', styles.titleFunExtraLarge, irishGrover);
   export const TitleFunLarge = createText('h1', styles.titleFunLarge, irishGrover);

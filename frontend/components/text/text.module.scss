@@ -6,21 +6,21 @@ $fontWeightRegular: 400;
     padding: 0;
 }
 
-.titleSansLarge {
+.titleSansLargeBold {
     @extend .baseText;
     font-size: 4rem;
     font-weight: $fontWeightBold;
     line-height: 1.2;
 }
 
-.titleSansLargeRegular {
+.titleSansLarge {
     @extend .baseText;
     font-size: 4rem;
     font-weight: $fontWeightRegular;
     line-height: 1.2;
 }
 
-.titleSansSmall {
+.titleSansSmallBold {
     @extend .baseText;
     font-size: 3rem;
     font-weight: $fontWeightBold;
