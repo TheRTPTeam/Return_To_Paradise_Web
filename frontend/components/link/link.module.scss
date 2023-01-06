@@ -1,0 +1,10 @@
+@use "~@components/design_system/design_system.module.scss" as ds;
+
+.link {
+    color: ds.$color-accent;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 80%;
+    }
+}

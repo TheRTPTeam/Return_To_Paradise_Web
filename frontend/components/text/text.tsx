@@ -9,7 +9,7 @@ const irishGrover = Irish_Grover({ weight: '400', subsets: ['latin'] });
 type TextTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'div';
 
 type TextProps = {
-  children: string;
+  children: React.ReactNode;
   className?: string;
   tag?: TextTag;
 };
