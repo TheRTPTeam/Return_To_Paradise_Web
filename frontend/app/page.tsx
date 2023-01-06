@@ -3,8 +3,8 @@ import Text from '@components/text/text';
 const Home = () => {
   return (
     <>
-      <Text tag='h1'>Hello World</Text>
-      <Text>Welcome to Viva Pinata RTP</Text>
+      <Text.TitleSansLarge>Hello World</Text.TitleSansLarge>
+      <Text.FunMedium>Welcome to Viva Pinata RTP</Text.FunMedium>
     </>
   );
 };

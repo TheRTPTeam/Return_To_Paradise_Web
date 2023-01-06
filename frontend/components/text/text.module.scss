@@ -1,4 +1,59 @@
-.text {
+$fontWeightBold: 700;
+$fontWeightRegular: 400;
+
+.baseText {
     margin: 0;
     padding: 0;
+}
+
+.titleSansLarge {
+    @extend .baseText;
+    font-size: 4rem;
+    font-weight: $fontWeightBold;
+    line-height: 1.2;
+}
+
+.titleSansLargeRegular {
+    @extend .baseText;
+    font-size: 4rem;
+    font-weight: $fontWeightRegular;
+    line-height: 1.2;
+}
+
+.titleSansSmall {
+    @extend .baseText;
+    font-size: 3rem;
+    font-weight: $fontWeightBold;
+    line-height: 1.2;
+}
+
+.sansMedium {
+    @extend .baseText;
+    font-size: 2.5rem;
+    font-weight: $fontWeightRegular;
+    line-height: 1.6;
+}
+
+.titleFunExtraLarge {
+    @extend .baseText;
+    font-size: 6.4rem;
+    line-height: 1.2;
+}
+
+.titleFunLarge {
+    @extend .baseText;
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+
+.funLarge {
+    @extend .baseText;
+    font-size: 3rem;
+    line-height: 1.6;
+}
+
+.funMedium {
+    @extend .baseText;
+    font-size: 2.5rem;
+    line-height: 1.6;
 }

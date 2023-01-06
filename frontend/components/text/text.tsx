@@ -1,42 +1,44 @@
+import { NextFont } from '@next/font/dist/types';
 import { Inter, Irish_Grover } from '@next/font/google';
 import classNames from 'classnames';
 import styles from './text.module.scss';
 
-const inter = Inter({});
-const irishGrover = Irish_Grover({ weight: '400' });
+const inter = Inter({ subsets: ['latin'] });
+const irishGrover = Irish_Grover({ weight: '400', subsets: ['latin'] });
 
 type TextAllowedTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'div';
-type TextAllowedFonts = 'Inter' | 'Irish_Grover';
 
 type TextProps = {
   children: React.ReactNode;
   className?: string;
   tag?: TextAllowedTags;
-  font?: TextAllowedFonts;
 };
 
-const Text = ({
-  children,
-  className,
-  tag = 'p',
-  font = 'Inter',
-}: TextProps) => {
-  const TextTag = tag;
-
-  const getFont = (font: TextAllowedFonts) => {
-    switch (font) {
-      case 'Inter':
-        return inter;
-      case 'Irish_Grover':
-        return irishGrover;
-      default:
-        throw new Error(font);
-    }
+const createText = (defaultTag: TextAllowedTags, className: string, font: NextFont) => {
+  const baseClassName = className;
+  return ({
+    children,
+    className,
+    tag,
+  }: TextProps) => {
+    const Tag = tag ?? defaultTag;
+    return (
+      <Tag className={classNames(baseClassName, font.className, className)}>
+        {children}
+      </Tag>
+    )
   };
+};
 
-  return (
-    <TextTag className={classNames(styles.text, getFont(font).className, className)}>{children}</TextTag>
-  );
+namespace Text {
+  export const TitleSansLarge = createText('h1', styles.titleSansLarge, inter);
+  export const TitleSansLargeRegular = createText('h1', styles.titleSansLargeRegular, inter);
+  export const TitleSansSmall = createText('h1', styles.titleSansSmall, inter);
+  export const SansMedium = createText('p', styles.sansMedium, inter);
+  export const TitleFunExtraLarge = createText('h1', styles.titleFunExtraLarge, irishGrover);
+  export const TitleFunLarge = createText('h1', styles.titleFunLarge, irishGrover);
+  export const FunLarge = createText('p', styles.funLarge, irishGrover);
+  export const FunMedium = createText('p', styles.funMedium, irishGrover);
 };
 
 export default Text;
