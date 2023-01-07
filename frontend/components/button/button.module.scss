@@ -1,6 +1,10 @@
 @use "~@components/design_system/design_system.module.scss" as ds;
 
 .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 0;
     border-radius: ds.$measurement-baseline-grid;
     background-color: ds.$color-black;

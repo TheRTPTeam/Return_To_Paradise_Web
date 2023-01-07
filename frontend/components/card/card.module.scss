@@ -1,0 +1,22 @@
+@use "~@components/design_system/design_system.module.scss" as ds;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0;
+    border-radius: calc(2 * ds.$measurement-baseline-grid);
+    background-color: ds.$color-grey;
+}
+
+.clickableCard {
+    @extend .card;
+    transition: 0.15s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 80%;
+    }
+}
