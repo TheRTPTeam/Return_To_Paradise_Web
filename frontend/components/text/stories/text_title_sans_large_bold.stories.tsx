@@ -10,7 +10,7 @@ export default {
   },
 } as Meta<typeof Text.TitleSansLargeBold>;
 
-export const TitleSansLargeBold: StoryObj<typeof Text.TitleSansLargeBold> = {
+export const Primary: StoryObj<typeof Text.TitleSansLargeBold> = {
   args: {
     children: 'TitleSansLargeBold',
   },

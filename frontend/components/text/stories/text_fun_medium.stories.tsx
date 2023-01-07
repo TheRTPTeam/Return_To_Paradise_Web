@@ -10,7 +10,7 @@ export default {
   },
 } as Meta<typeof Text.FunMedium>;
 
-export const FunMedium: StoryObj<typeof Text.FunMedium> = {
+export const Primary: StoryObj<typeof Text.FunMedium> = {
   args: {
     children: 'FunMedium',
   },
