@@ -1,0 +1,21 @@
+@use "~@components/design_system/design_system.module.scss" as ds;
+
+.button {
+    border: 0;
+    background: 0;
+    transition: 0.15s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 80%;
+    }
+}
+
+.buttonDisabled {
+    display: none;
+}
+
+.icon {
+    width: calc(3 * ds.$measurement-baseline-grid);
+    height: calc(3 * ds.$measurement-baseline-grid);
+}

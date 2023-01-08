@@ -1,0 +1,34 @@
+@use '~@components/css_helpers/css_helpers.module.scss' as helpers;
+
+.carouselViewport {
+    position: relative;
+}
+
+.carouselList {
+    @extend .disableScrollbar;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+}
+
+.carouselListItem {
+    height: 100%;
+}
+
+.carouselScrollButtonContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}

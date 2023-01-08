@@ -1,0 +1,12 @@
+.disableScrollbar {
+    // Firefox
+    scrollbar-width: none;
+    // Edge
+    -ms-overflow-style: none;
+  
+    // Chrome, Safari
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: 0px;
+    }
+}

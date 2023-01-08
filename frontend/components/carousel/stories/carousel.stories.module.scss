@@ -1,0 +1,50 @@
+@use "~@components/design_system/design_system.module.scss" as ds;
+
+.carousel {
+    width: calc(60 * ds.$measurement-baseline-grid);
+    height: calc(30 * ds.$measurement-baseline-grid);
+}
+
+.card {
+    height: 100%;
+}
+
+.card1 {
+    @extend .card;
+    width: calc(20 * ds.$measurement-baseline-grid);
+}
+
+.card2 {
+    @extend .card;
+    width: calc(25 * ds.$measurement-baseline-grid);
+}
+
+.card3 {
+    @extend .card;
+    width: calc(15 * ds.$measurement-baseline-grid);
+}
+
+.card4 {
+    @extend .card;
+    width: calc(40 * ds.$measurement-baseline-grid);
+}
+
+.card5 {
+    @extend .card;
+    width: calc(30 * ds.$measurement-baseline-grid);
+}
+
+.card6 {
+    @extend .card;
+    width: calc(20 * ds.$measurement-baseline-grid);
+}
+
+.card7 {
+    @extend .card;
+    width: calc(50 * ds.$measurement-baseline-grid);
+}
+
+.card8 {
+    @extend .card;
+    width: calc(40 * ds.$measurement-baseline-grid);
+}
