@@ -3,6 +3,7 @@ import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./nav_bar.module.scss";
+import { IMAGE_URL } from "./nav_bar_static_content";
 
 type NavBarProps = {
   className?: string;
@@ -13,8 +14,8 @@ const NavBar = ({ className }: NavBarProps) => {
     <div className={classNames(styles.nav_bar, className)}>
       <Image
         className={styles.image}
-        src="/rtp_logo.png"
-        alt="rtp logo"
+        src={IMAGE_URL}
+        alt="logo"
         width={70}
         height={70}
       />
